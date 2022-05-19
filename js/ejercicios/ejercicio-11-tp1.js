@@ -1,3 +1,6 @@
+//  Añadir al ejercicio anterior que nos diga por cuál de los cuatro es divisible (hay que decir todos por los que es divisible)
+
+
 let numero = prompt("Escribe un número");
 if (numero % 2 === 0 || numero % 3 === 0 || numero % 5 === 0 || numero % 7 === 0) {
 if (numero % 2 === 0) {
