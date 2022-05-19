@@ -2,12 +2,12 @@
 // Nota: Tener en cuenta la función length y substring o charAt (developer mozilla)
 
 // otra forma de hcaerlo
-let frase = prompt ("Ingrese una frase de 5 caracteres");
+let frase = prompt ("Ingrese una frase");
 frase = frase.toLowerCase();
 // tolowercase es para q independientemente lo que ponga el usuario, saldra siempre en minuscula
 // perro
 console.log(frase.length);
-// length nos mostrara la cantidad de caracteres que tiene la frase
+// length nos devuelve la cantidad de caracteres que tiene la frase
 console.log(frase.substring(0,1));
 // substring nos mostrara de donde hasta donde analizara la frase
 // if (frase.substring(0,1) === "a" || frase.substring(0,1) === "e" || frase.substring(0,1) === "i" || frase.substring(0,1) === "o" || frase.substring(0,1) === "u"){
@@ -35,7 +35,7 @@ console.log(frase.substring(0,1));
 
 // Otra forma de hacerlo con el bucle for
 
-for(let indice = 0; indice < 5; indice ++){
+for(let indice = 0; indice < frase.length; indice ++){
     if (frase.charAt(indice) === "a" || frase.charAt(indice) === "e" || frase.charAt(indice) === "i" || frase.charAt(indice) === "o" || frase.charAt(indice) === "u"){
         document.write(frase.charAt(indice))
     }
