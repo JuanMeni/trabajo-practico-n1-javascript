@@ -3,6 +3,8 @@
 
 // otra forma de hcaerlo
 let frase = prompt ("Ingrese una frase de 5 caracteres");
+frase = frase.toLowerCase();
+// tolowercase es para q independientemente lo que ponga el usuario, saldra siempre en minuscula
 // perro
 console.log(frase.length);
 // length nos mostrara la cantidad de caracteres que tiene la frase
@@ -23,3 +25,10 @@ if (frase.substring(3,4) === "a" || frase.substring(3,4) === "e" || frase.substr
 if (frase.substring(4,5) === "a" || frase.substring(4,5) === "e" || frase.substring(4,5) === "i" || frase.substring(4,5) === "o" || frase.substring(4,5) === "u"){
     document.write(frase.substring(4,5))
 }
+
+// Otra forma de hacerlo es utilizando charAt
+
+// if (frase.charAt(0) === "a" || frase.charAt(0) === "e" || frase.charAt(0) === "i" || frase.charAt(0) === "o" || frase.charAt(0) === "u"){
+//         document.write(frase.charAt(0))
+//     }
+// y asi copiando el if, reemplazando el substring  por charAt y modificando los parametros que estan entre parentesis.
