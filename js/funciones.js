@@ -11,12 +11,19 @@ saludar();
 function saludarPersona(nombreRecibido, apellidoRecibido){
     document.write(`<br>Hola, mi nombre es: ${nombreRecibido} y mi apellido es: ${apellidoRecibido}`);
 }
-
+// ES5
 // funcion que retorna valor
-function convertirDolaresAPesos(dolares){
-    let pesosFinales = dolares * 210;
-    return pesosFinales;
-}
+// function convertirDolaresAPesos(dolares){
+//     let pesosFinales = dolares * 210;
+//     return pesosFinales;
+// }
+
+// ES6 arrow functions
+const convertirDolaresAPesos = (dolares) => {
+        let pesosFinales = dolares * 210;
+        return pesosFinales;
+    }
+
 
 let nombre = prompt("Ingrese un nombre.");
 let apellido = prompt("Ingrese un apellido.");
