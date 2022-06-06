@@ -1,7 +1,7 @@
 // crear una clase
 class Usuario{
     // primero creamos un metodo constructor
-    constructor(nombreUsuario, nombre, apellido, correo, password, direccion){
+    constructor(nombreUsuarioParam, nombreParam, apellidoParam, correoParam, passwordParam, direccionParam){
         this.nombreUsuario = nombreUsuarioParam;
         this.password = passwordParam;
         this.apellido = apellidoParam;
