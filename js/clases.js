@@ -1,3 +1,5 @@
+// comision, notas, legajo, estado, asistencia
+// comision, antiguedad, horarios: (part-time, full-time), tipo de contrato.
 // crear una clase
 class Usuario {
   // primero creamos un metodo constructor
@@ -46,7 +48,16 @@ class Usuario {
         </ul>`);
   }
 }
-
+// crear una clase con herencia
+class Alumno extends Usuario{
+  constructor(comision, legajo, nombre, apellido, nombreUsuario, password, email, direccion){
+    // invocamos al constructor de la clase usuario
+    super(nombreUsuario, nombre, apellido, email, password, direccion);
+    this.comision = comision;
+    this.legajo = legajo;
+    this.estado = estado;
+  }
+}
 // como crear un objeto o instancia
 let userValentina = new Usuario(
   "valeOrmaechea",
@@ -75,4 +86,3 @@ document.write(
 );
 userJuan.modificarDireccion = 'Tucumán';
 document.write(`<br>La direccion de usuario es ${userJuan.mostrarNombreUsuario} es ${userJuan.mostrarDireccion}`)
-
